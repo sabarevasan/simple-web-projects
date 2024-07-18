@@ -15,7 +15,7 @@ html {
     .navbar {
         width: 100%;
         height: 19rem;
-        background-color: aliceblue;
+        background-color: #c7d7fa;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -42,7 +42,7 @@ html {
         font-family: "Kenia", cursive;
         font-size: 4rem;
         letter-spacing: 0.3rem;
-        color: chocolate;
+        color: #073e72;
     }
     .search-box {
         position: relative;
@@ -55,10 +55,10 @@ html {
         border-radius: 0.5rem;
         font-size: 1.6rem;
         font-weight: 300;
-        color: brown;
+        color: #073e72;
     }
     .search-box input::placeholder {
-        color: brown;
+        color: #073e72;
         font-size: 1.7rem;
         font-weight: 300;
     }
@@ -68,10 +68,14 @@ html {
         left: 1.4rem;
         transform: translateY(-50%);
         font-size: 1.5rem;
+        color: #073e72;
+    }
+    .search-box input:focus{
+        border: 0.2rem solid #073e72;
     }
     .user {
         font-size: 2rem;
-        color: chocolate;
+        color: #073e72;
     }
     .user i, .user span {
         margin-right: 1.2rem;
@@ -96,19 +100,19 @@ html {
     }
     .nav-list i {
         font-size: 2rem;
-        color: chocolate;
+        color: #073e72;
         margin-bottom: 1rem;
     }
     .nav-list span {
         font-size: 1.6rem;
-        color: chocolate;
+        color: #073e72;
         letter-spacing: 0.1rem;
     }
     /* Navbar END */
     /* Landing */
     .landing {
         width: 100%;
-        height: 90vh;
+        height: 80vh;
         position: relative;
     }
     .landing-bg {
@@ -118,7 +122,7 @@ html {
         transform: translateX(-50%);
         width: 90%;
         height: 65rem;
-        background-color: #869fe0;
+        background-color: #073e72;
         border-radius: 3rem;
     }
     .banner {
@@ -178,15 +182,14 @@ html {
         color: white;
     }
     /* Landing END */
-
     /* Products */
     .products {
         width: 100%;
-        height: 85vh;
+        height: 65vh;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 5rem;
+        padding-top: 10rem;
     }
     .products-top {
         width: 60%;
@@ -194,17 +197,16 @@ html {
     }
     .products h3 {
         font-size: 5rem;
-        color: brown;
-        margin-top: 12rem;
+        color: #235280;
     }
     .products h2 {
         font-size: 7rem;
-        color: brown;
+        color: #073e72;
         margin-top: -2rem;
     }
     .products h1 {
         font-size: 9rem;
-        color: brown;
+        color: #235280;
         margin-top: -5rem;
         margin-bottom: -5rem;
     }
@@ -219,7 +221,7 @@ html {
         flex-direction: column;
         align-items: center;
         width: 18rem;
-        height: 15rem;
+        height: 18rem;
         margin-right: 2rem;
         background-color: whitesmoke;
         padding: 3rem 0;
@@ -230,126 +232,554 @@ html {
     .product-icons div:hover {
         background-color: white;
         box-shadow: 0 1rem 3rem rgba(0,0,0,0.1);
-
     }
-.product-icons div:last-child {
-    margin-right: 0;
-}
-    .product-icons div image {
+    .product-icons div:last-child {
+        margin-right: 0;
+    }
+        .product-icons div image {
+            margin-bottom: 3rem;
+        }
+    .product-icons div span {
+        font-size: 2.5rem;
+        color: #073e72;
+    }
+    /* Products END */
+    /* Pricing */
+    .pricing {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
+        margin-top: 10rem;
+    }
+    .pricing-top {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10rem;
+    }
+    .pricing-top img {
+        margin-right: 20rem;
+    }
+    .pricing-top h1 {
+        font-size: 10rem;
+        color: #073e72;
+        width: 50rem;
+        line-height: 1;
         margin-bottom: 3rem;
     }
-.product-icons div span {
-    font-size: 2.5rem;
-    color: chocolate;
-}
-    /* Products END */
-/* Pricing */
-.pricing {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20rem;
-    margin-top: 10rem;
-}
-.pricing-top {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10rem;
-}
-.pricing-top img {
-    margin-right: 20rem;
-}
-.pricing-top h1 {
-    font-size: 10rem;
-    color: chocolate;
-    width: 50rem;
-    line-height: 1;
-    margin-bottom: 3rem;
-}
-.pricing-top button,.pricing button {
-    width: 18rem;
-    height: 4rem;
-    background-color: white;
-    border: 0.1rem solid chocolate;
-    border-radius: 3rem;
-    font-size: 1.6rem;
-    color: chocolate;
-    cursor: pointer;
-}
-.pricing-cards {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 5rem;
-}
-.pricing-card {
-    width: 30rem;
-    height: 45rem;
-    background-color: whitesmoke;
-    margin: 1rem;
-    border-radius: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 5rem 0;
-    cursor: pointer;
-    position: relative;
-}
-.pricing-card-icons {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    display: flex;
-    flex-direction: column;
-}
-.pricing-card-icons i {
-    width: 3rem;
-    height: 3rem;
-    background-color: white;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
-    font-size: 1.2rem;
-    color: chocolate;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(2rem);
-    transition: all 0.3s;
-}
-.pricing-card:hover .pricing-card-icons i {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-.img-wrapper {
-    width: 20rem;
-    height: 18rem;
-    margin-bottom: 5rem;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-}
-.pricing-card h3 {
-    font-size: 1.6rem;
-    font-weight: 300;
-    letter-spacing: 0.1rem;
-    color: chocolate;
-}
-.stars i {
-    font-size: 1.6rem;
-    color: darkblue;
-}
-.pricing-card h4 {
-    font-size: 1.8rem;
-    color: chocolate;
-}
-
-/* Pricing END*/
+    .pricing-top button,.pricing button {
+        width: 18rem;
+        height: 4rem;
+        background-color: white;
+        border: 0.1rem solid chocolate;
+        border-radius: 3rem;
+        font-size: 1.6rem;
+        color: chocolate;
+        cursor: pointer;
+    }
+    .pricing-cards {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 5rem;
+    }
+    .pricing-card {
+        width: 30rem;
+        height: 45rem;
+        background-color: whitesmoke;
+        margin: 1rem;
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5rem 0;
+        cursor: pointer;
+        position: relative;
+    }
+    .pricing-card-icons {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .pricing-card-icons i {
+        width: 3rem;
+        height: 3rem;
+        background-color: white;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+        font-size: 1.2rem;
+        color: #073e72;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(2rem);
+        transition: all 0.3s;
+    }
+    .pricing-card:hover .pricing-card-icons i {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    .img-wrapper {
+        width: 20rem;
+        height: 18rem;
+        margin-bottom: 5rem;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .pricing-card h3 {
+        font-size: 1.6rem;
+        font-weight: 300;
+        letter-spacing: 0.1rem;
+        color: #073e72;
+    }
+    .stars i {
+        font-size: 1.6rem;
+        color: gold;
+    }
+    .pricing-card h4 {
+        font-size: 1.8rem;
+        color: #073e72;
+    }
+    /* Pricing END*/
+    /* Blog */
+    .blog {
+        width: 100%;
+        height: 85vh;
+        background-color: #073e72;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .blog-content {
+        width: 50%;
+        background-color: #c7d7fa;
+        border-radius: 3rem;
+    }
+    .blog-top {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .blog-top img {
+        margin-top: 3rem;
+    }
+    .trends h1 {
+        font-size: 6rem;
+        width: 35rem;
+        line-height: 1;
+        color: #073e72;
+        margin-bottom: 3rem;
+    }
+    .trends button {
+        width: 18rem;
+        height: 4rem;
+        background-color: #073e72;
+        border: none;
+        border-radius: 3rem;
+        font-size: 1.6rem;
+        color: white;
+        cursor: pointer;
+    }
+    .blog-articles {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .article {
+        width: 23rem;
+        height: 10rem;
+        margin: 5rem 3rem;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .article span {
+        font-size: 2rem;
+        color: #073e72;
+        text-transform: uppercase;
+        line-height: 1;
+    }
+    .article span:nth-child(1) {
+        font-size: 5rem;
+        font-weight: bold;
+        color: #073e72;
+        margin-right: 1rem;
+    }
+    /* Blog END*/
+    /* Contact */
+    .contact {
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-content {
+        width: 50%;
+        height: 15rem;
+        display: flex;
+    }
+    .content-left {
+        width: 40%;
+        height: 100%;
+        background-color: #073e72;
+        border-radius: 2rem 0 0 2rem;
+        align-items: center;
+        display: flex;
+        padding-left: 4rem;
+    }
+    .content-left h2 {
+        width: 80%;
+        font-size: 2.2rem;
+        color: whitesmoke;
+        line-height: 1.4;
+    }
+    .content-left span {
+        font-size: 2.5rem;
+        color: white;
+    }
+    .content-right {
+        width: 60%;
+        height: 100%;
+        background-color: #c7d7fa;
+        border-radius: 0 2rem 2rem 0;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .content-right input {
+        width: 30rem;
+        height: 4rem;
+        background-color: white;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        border: none;
+        color: #073e72;
+        margin-right: 1rem;
+    }
+    .content-right input::placeholder {
+        color: #073e72;
+        font-size: 1.4rem;
+    }
+    .content-right input:focus{
+        border: 0.2rem solid #073e72;
+    }
+    .content-right button {
+        width: 8rem;
+        height: 4rem;
+        background-color: #073e72;
+        border: none;
+        border-radius: 3rem;
+        font-size: 1.6rem;
+        color: white;
+        cursor: pointer;
+    }
+    /* Contact END*/
+    /* Footer */
+    .footer {
+        width: 50%;
+        height: 5rem;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-top: 0.1rem solid #073e72;
+    }
+    .copyright {
+        font-size: 1.6rem;
+        color: #073e72;
+    }
+    .brand {
+        display: flex;
+        align-items: center;
+    }
+    .brand i {
+        font-size: 2rem;
+        color: saddlebrown;
+        margin-right: 1.5rem;
+    }
+    .brand h1 {
+        font-family: "Kenia", cursive;
+        font-size: 2rem;
+        letter-spacing: 0.3rem;
+        color: #073e72;
+    }
+    /* Footer END */
 /* Container END */
+
+/* Responsive */
+@media(max-width: 1600px) {
+    .banner {
+        width: 70%;
+    }
+    .products {
+        padding-top: 20rem;
+        height: 90vh;
+    }
+    .products-top {
+        width: 70%;
+    }
+    .product-icons {
+        width: 70%;
+    }
+    .pricing-cards {
+        width: 70%;
+    }
+    .blog-content {
+        width: 80%;
+    }
+    .contact-content {
+        width: 70%;
+    }
+    .footer {
+        width: 70%;
+    }
+}
+@media(max-width: 1400px) {
+    html {
+        font-size: 55%;
+    }
+    .pricing-top img {
+        width: 60rem;
+        margin-right: 10rem;
+    }
+}
+@media(max-width: 1200px) {
+    html {
+        font-size: 50%;
+    }
+    .landing {
+        height: 60vh;
+    }
+    .banner {
+        width: 80%;
+    }
+    .products-top {
+        width: 80%;
+    }
+    .product-icons {
+        width: 80%;
+    }
+    .pricing-cards {
+        width: 80%;
+    }
+    .blog-content {
+        width: 80%;
+        height: 90%;
+    }
+    .blog-top img  {
+        width: 40rem;
+    }
+    .blog-articles {
+        margin-top: 0;
+    }
+    .contact-content  {
+        width: 80%;
+    }
+    .footer {
+        width: 80%;
+    }
+}
+@media(max-width: 1000px) {
+    html {
+        font-size: 45%;
+    }
+    .navbar-top div {
+        margin: 0 2rem;
+    }
+    .search-box imput {
+        width: 40rem;
+    }
+    .banner-heading {
+        font-size: 6rem;
+    }
+    .products {
+        height: 50vh;
+        padding-top: 10rem;
+    }
+    .products-top h2 {
+        font-size: 7rem;
+    }
+    .products-top img {
+        width: 40rem;
+    }
+    .pricing-top h1 {
+        font-size: 5rem;
+        width: 35rem;
+    }
+    .pricing-cards {
+        width: 90%;
+    }
+}
+@media(max-width: 800px) {
+    html {
+        font-size: 40%;
+    }
+    .logo i {
+        font-size: 4rem;
+    }
+    .search-box input {
+        width: 30rem;
+    }
+    .products {
+        height: 40vh;
+        padding-top: 5rem;
+    }
+    .product-icons div {
+        height: 15rem;
+    }
+    .product-icons div img {
+        width: 7rem;
+    }
+    .product-icons div span {
+        font-size: 2rem;
+    }
+    .pricing-top img {
+        width: 30rem;
+    }
+    .pricing-card {
+        width: 27rem;
+    }
+    .pricing-card img {
+        width: 18rem;
+    }
+    .blog-top img {
+        width: 30rem;
+    }
+    .trends h1 {
+        font-size: 4rem;
+        width: 20rem;
+    }
+    .blog-articles {
+        margin-top: 5rem;
+    }
+    .contact-content {
+        width: 90%;
+    }
+    .contact-content input {
+        width: 30rem;
+    }
+    .footer {
+        width: 90%;
+    }
+}
+@media(max-width: 600px) {
+    html {
+        font-size: 35%;
+    }
+    .landing {
+        height: 50vh;
+    }
+    .logo span {
+        font-size: 3rem;
+    }
+    .search-box input {
+        width: 26rem;
+    }
+    .nav-list div {
+        width: 12rem;
+    }
+    .landing {
+        height: 50vh;
+    }
+    .banner-heading {
+        width: 30rem;
+    }
+    .banner-btn {
+        width: 15rem;
+    }
+    .banner-btn-shop {
+        right: 22rem;
+    }
+    .products {
+        height: 100vh;
+        padding-top: 30rem;
+    }
+    .products-top {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    .product-icons {
+        width: 70%;
+        flex-wrap: wrap;
+    }
+    .product-icons div {
+        width: 16rem;
+        margin: 2rem;
+    }
+    .product-icons div:last-child {
+        margin-right: 2rem;
+    }
+    .article span {
+        font-size: 1.5rem;
+    }
+    .blog-content {
+        height: 70%;
+    }
+}
+@media(max-width: 450px) {
+    html {
+        font-size: 32%;
+    }
+    .logo span {
+        display: none;
+    }
+    .products {
+        padding-top: 25rem;
+        height: 100vh
+    }
+    .pricing-top img {
+        width: 25rem;
+    }
+    .pricing-top h1 {
+        font-size: 3.5rem;
+        width: 25rem;
+    }
+    .blog-content {
+        height: 60%;
+        width: 85%;
+    }
+    .trends button {
+        width: 13rem;
+        height: 3rem;
+        font-size: 1.4rem;
+    }
+    .article {
+        width: 15rem;
+        height: 15rem;
+        margin: 3rem 1rem;
+    }
+    .article span {
+        font-size: 1.3rem;
+    }
+    .content-left h2 {
+        font-size: 1.8rem;
+    }
+    .content-left span {
+        font-size: 2rem;
+    }
+    .content-right input {
+        width: 25rem;
+    }
+}
+@media(max-width: 320px) and (min-width: 100px) {
+    .products {
+        padding-top: 25rem;
+        height: 160vh
+    }
+    .contact-content {
+        width: 100%;
+    }
+}
+/* Responsive END */
